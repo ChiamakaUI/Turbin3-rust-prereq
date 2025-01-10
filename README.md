@@ -5,4 +5,3 @@ To run any of the functions in lib.rs use the command below
 ```
 cargo test {func_name} -- --nocapture
 ```
-
