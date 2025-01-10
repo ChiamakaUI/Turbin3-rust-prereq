@@ -52,12 +52,6 @@ mod tests {
             .get_latest_blockhash()
             .expect("Failed to get recent blockhash");
 
-        // let transaction = Transaction::new_signed_with_payer(
-        //     &[transfer(&keypair.pubkey(), &to_pubkey, 1_000_000)],
-        //     Some(&keypair.pubkey()),
-        //     &vec![&keypair],
-        //     recent_blockhash,
-        // );
         let balance = rpc_client
             .get_balance(&keypair.pubkey())
             .expect("Failed to get balance");
@@ -174,5 +168,3 @@ mod tests {
         );
     }
 }
-
-// 3y3xvhm72Y1rXn8okVFrRGn7yC6BaZs2ZM91H1793KUaGKJQYoCC4xbf5q6z7kM3gFYkCHb4QDeSHVpg5AP9yssi
